@@ -21,9 +21,6 @@ class Hero extends Component
     
     fetchDetails = (result) =>
     {
-     
-      console.log('We need to get the details for ', result);
-      console.log(result.scan)
       const scan_rev = result.scan;
       this.setState({scan_rev})
     
