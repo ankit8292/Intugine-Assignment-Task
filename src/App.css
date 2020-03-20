@@ -2,8 +2,15 @@
 {
   background-color:white
 }
-
-
+.mtop
+{
+  margin-top: 15px;
+}
+img
+{
+  margin-left: 6px;
+  margin-right: 20px;
+}
 
 
 
@@ -11,8 +18,96 @@
 
 
  
+.dot {
+  height: 32px;
+  width: 32px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left:1px
   
+}
   
+
+/* */
+.table{
+  height:500px;
+  display:block;
+  overflow:scroll;
+  
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #61dafb;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.custom-timeline {
+  margin-left: 20px;
+}
+
+.custom-timeline .rs-timeline-item-custom-dot .rs-icon {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: -2px;
+  border: 2px solid #ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  padding-top: 9px;
+  color: #999;
+  margin-left: -13px;
+}
+
+.custom-timeline .rs-timeline-item-content {
+  margin-left: 24px;
+}
+
+.card {
+  width: 5rem !important;
+  border-radius: 0.6rem !important;
+  background-color:rgb(182, 208, 238)!important;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.card_head {
+  left: 0.5rem;
+  position: absolute;
+  color: rgb(56, 59, 245);
+}
+
+.card_no {
+  position: inherit;
+  top: 1rem;
+  margin-top: 2.3rem;
+  margin-left: center;
+  margin-right:3rem;
+  font-size: 1rem;
+  color: rgb(56, 59, 245);
+}
+
+.cards {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
   
 
  

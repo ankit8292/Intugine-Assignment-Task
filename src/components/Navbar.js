@@ -2,7 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import logo from '../img/logo.svg'
 import profile from '../img/profile.svg'
-//import Navbar from 'react-bootstrap';
+import { FaChevronDown } from "react-icons/fa";
+//import Navbar from 'react-bootstrap'; 
   const Navbar = () => {
     return(
         <>
@@ -13,7 +14,8 @@ import profile from '../img/profile.svg'
                 
                 <div >
                     <ul className="navbar-nav ">
-                                    <li style={{marginLeft:'870px'}} >
+                               
+                                    <li style={{marginLeft:'870px' }} >
                                             <Link to='/' className="nav-link text-dark text-bold">
                                             <b style={{fontSize:'13.5px'}}> Home</b>
                                             </Link>
@@ -26,23 +28,28 @@ import profile from '../img/profile.svg'
                                     <li >
                                             <Link to='/' className="nav-link text-dark " >
                                               <b style={{fontSize:'13.5px'}}>Transporters </b>  
-                                            <img src={profile} alt="logo goes here" width='19px'  /> 
+                                            {/* <img src={profile} alt="logo goes here" width='19px'  />  */}
                                             </Link>
                                     </li>
-                                    {/* <li >
-                                            <Link to='/' className="nav-link text-dark " >
-                                            <img src={profile} alt="logo goes here" width='19px'  /> 
-                                            </Link>
-                                    </li> */}
-                                    <li>
-                                    <i class="fas fa-angle-down"></i>
+                                        <li>
+                                           <div className="dot ">
+                                           <img src={profile} alt="logo goes here" height="20" width="20"  /> 
+                                           </div>
+                                           </li>  
+                                            
+                                   
+                                    <li style={{marginLeft:'10px'}}>
+                                    {/* <Link> */}
+                                    <FaChevronDown className="cart-icon mtop" />
+                                    {/* </Link> */}
+                                   
                                     </li>
                                 
                             
                         
                         
                         
-
+                                   
                     </ul>
                 </div>
                 
